@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Google Maps API</title>
+        <!--include jquery pentru script-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src = "{{ url_for('static', filename='script.js') }}"></script>
+    </head>
+    <body>
+        <h1>
+         Search you location using Google Maps
+        </h1>
+        <!--input pentru cautare-->
+        <input type="text" id="query" placeholder="Please enter location">
+        <!--buton SEARCH-->
+        <button id = "search">Search</button>
+
+        <!--link (va incarca un nou tab url: Google Maps)-->
+        <p><a href="" id="url" target="_blank">Click for result!</a></p>
+    </body>
+</html>
